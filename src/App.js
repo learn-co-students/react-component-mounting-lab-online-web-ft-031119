@@ -11,7 +11,9 @@ class App extends Component {
 
 
   //Your code here:
-
+  componentDidMount(){
+    this.handleAddTimer()
+  }
 
 
 
@@ -53,7 +55,7 @@ class App extends Component {
   removeTimer = id => {
     this.setState(prevState => ({
       timerIDs: prevState.timerIDs.filter(timer_id => timer_id !== id)
-    }))
+   }))
   }
 
 
